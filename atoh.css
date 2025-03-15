@@ -1,0 +1,748 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+
+h1{
+    font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2{
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h3{
+    font-size: 1.4em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h4{
+    font-size: 1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p{
+    font-size: 1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+i{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+    font-size: 1em;
+}
+
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.home button, .view button, .form button, .form button{
+    background: rgb(248, 167, 236);
+    color: black;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    border: none;
+    width: 140px;
+    padding: 10px 0;
+    font-size: 1em;
+    border-radius: 30px;
+}
+
+.home button:hover, .view button:hover, .form button:hover{
+    background: rgb(168, 26, 146);
+    color: white;
+}
+
+header{
+    padding: 10px 8%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: Center;
+    position: fixed;
+    box-shadow: 0 0 20px 10px rgb(230, 227, 227);
+    background: rgb(247, 228, 247);
+}
+
+.link .nav{
+    display: flex;
+    list-style: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    position: relative;
+}
+
+.nav a{
+    padding: 7px 17px;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.nav a::after{
+    content: '';
+    color: rgb(168, 26, 146);
+    background: rgb(168, 26, 146);
+    height: 3px;
+    bottom: -3px;
+    position: absolute;
+    width: 0;
+    transition: 0.4s ease-in-out;
+    left: 0;
+}
+
+.nav a:hover::after, nav a:active::after{
+    width: 100%;
+}
+
+.nav  a:hover, .nav a:active{
+    color: rgb(168, 26, 146);
+}
+
+.menu{
+    display: none;
+    color: black;
+}
+
+.menu:hover{
+    color: rgb(168, 26, 146);
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    padding: 50px 8% 0px 8%;
+    margin-bottom: 50px;
+    background: rgb(223, 216, 221);
+    border-radius: 0 0 200px 200px;
+}
+
+.home h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home span{
+    color: rgb(168, 26, 146);
+}
+
+.tradein{
+    width: 50%;
+}
+
+.atohimg{
+    width: 50%;
+}
+
+.home img{
+    width: 100%;
+    height: 560px;
+}
+
+.featured{
+    padding: 50px 8%;
+}
+
+.topic{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border: 1px solid rgb(223, 216, 221);
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.product:hover{
+    color: rgb(168, 26, 146);
+    box-shadow: 0 0 18px 10px rgb(230, 227, 227);
+}
+
+.product img{
+    background: rgb(223, 216, 221);
+    border-radius: 10px;
+    width: 100%;
+    height: 270px;
+}
+
+.bx-star{
+    color: goldenrod;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(168, 26, 146);
+    font-weight: bolder;
+    align-items: center;
+}
+
+.price i{
+    background: rgb(248, 167, 236);
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.price i:hover{
+    background: rgb(168, 26, 146);
+    color: white;
+}
+
+.fabric{
+    background-image: url('fabric3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 50px 0;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.fabric button{
+    width: 140px;
+    padding: 10px 0;
+    background: white;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.letter{
+    padding: 50px 8%;
+    color: white;
+    margin-bottom: 50px;
+    background: rgb(168, 26, 146);
+    display: flex;
+    justify-content: space-between;
+}
+
+.email input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 7px 4px;
+    background: white;
+}
+
+.email{
+    gap: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.email button{
+    background: rgb(248, 167, 236);
+    border: none;
+    color: black;
+    padding: 7px;
+    width: 100px;
+}
+
+footer{
+    padding: 50px 8% 0 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone span{
+    display: flex;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.app img{
+    width: 100px;
+    height: 70px;
+}
+.png{
+    display: flex;
+    gap: 10px;
+}
+
+/*Shop page*/
+.Shop{
+    height: 400px;
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    border-radius: 0 0 100px 100px;
+}
+
+.Contact{
+    height: 400px;
+    background-image: url('bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    border-radius: 0 0 100px 100px;
+
+}
+
+.moreProduct{
+    padding: 50px 8%;
+}
+
+.view{
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.hide{
+    display: none;
+}
+
+/*Contact*/
+.reach{
+    padding: 50px 8%;
+    display: flex;
+    gap: 20px; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map, .location{
+    width: 500px;
+}
+
+.reach span{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.reach iframe{
+    width: 100%;
+    height: 400px;
+}
+
+.form{
+    padding: 50px 8%;
+    background: rgb(223, 216, 221);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.form h2{
+    text-align: center;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: none;
+    padding: 20px 10px;
+    background: white;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+form input{
+    width: 98%;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px  solid black;
+    outline: none;
+}
+
+.form textarea{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 7px;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.bloggg{
+    padding: 50px 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogProduct{
+    display: flex;
+    gap: 30px;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.blogProduct img{
+    background: rgb(223, 216, 221);
+    width: 400px;
+    height: 300px;
+}
+
+.blogProduct .video{
+    width: 400px;
+    height: 300px;
+}
+
+.video video{
+    width: 100%;
+    height: 100%;
+}
+
+.blogProduct a:hover{
+    color: rgb(168, 26, 146);
+}
+
+.blogProduct h4{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/*about*/
+.know{
+    padding: 50px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    line-height: 1.4;
+}
+
+.knowimg{
+    width: 500px;
+    background: rgb(223, 216, 221);
+    height: 400px;
+    justify-content: center;
+}
+
+.knowimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.knoWrite{
+    width: 500px;
+}
+
+/*cart*/
+.table{
+    padding: 50px 8%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+th{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+tr input{
+    width: 30px;
+}
+
+table i{
+    border: 1px solid rgb(49, 48, 48);
+    padding: 4px;
+    border-radius: 50%;
+    color: rgb(49, 48, 48);
+}
+
+table img{
+    width: 100px;
+    height: 100px;
+    background: rgb(223, 216, 221);
+}
+
+thead{
+    border: 1px solid rgb(49, 48, 48);
+}
+
+/*media query*/
+@media (max-width:1200px){
+    .product img{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 2.8em;
+    }
+
+    .app img{
+        width: 80px;
+        height: 50px;
+    }
+
+    footer{
+        padding: 50px 6% 0 6%;
+    }
+
+    header{
+        padding: 10px 6%;
+    }
+
+    .featured, .reach, .letter, .table, .know, .bloggg, .form, .moreProduct{
+        padding: 50px 6%;
+    }
+}
+
+@media (max-width:1000px){
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .letter{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:746px){
+    .menu{
+        display: initial;
+    }
+
+    .link .nav{
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        position: absolute;
+        right: 100%;
+        background: rgb(168, 26, 146);
+        margin: 10px 20px;
+        border-radius: 20px;
+        height: 100vh;
+    }
+
+    .nav a{
+        display: block;
+        color: white;
+        border-bottom: 1px solid white;
+        padding: 20px 200px 10px 10px
+    }
+
+    .nav a:hover::after, nav a:active::after{
+        width: 0;
+    }
+    
+    .nav  a:hover, .nav a:active{
+        color: rgb(248, 167, 236);
+        font-size: 1.4em;
+    }
+
+    .link .nav.active{
+        right: 0;
+    }
+
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    .home img{
+        height: 400px;
+        width: 80%;
+    }
+
+    .atohimg, .tradein{
+        width: 100%;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: left;
+        align-items: center;
+    }
+
+    .reach, .blogProduct, .know{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .knowimg, .knoWrite{
+        width: 400px;
+    }
+
+    .map, .location{
+        width: 400px;
+    }
+
+    form{
+        width:490px;
+    }
+
+    th{
+        font-size: 1em;
+    }
+
+
+    table img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 500px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+
+    .knowimg, .knoWrite{
+        width: 300px;
+    }
+
+    .knowimg{
+        height: 300px;
+    }
+
+    .map, .location{
+        width: 300px;
+    }
+
+    form{
+        width: 380px;
+    }
+
+    table img{
+        width: 60px;
+        height: 60px;
+    }
+
+    table i{
+        padding: 2px;
+        font-size: 20px;
+    }
+
+    footer{
+        padding: 50px 2% 0 2%;
+    }
+
+    header{
+        padding: 10px 2%;
+    }
+
+    .featured, .reach, .letter, .table, .know, .bloggg, .form, .moreProduct{
+        padding: 50px 2%;
+    }
+
+    .email button{
+        padding: 7px 4px;
+    width: 100px;
+    }
+
+}
+
+@media (max-width: 400px){
+    .blogProduct img{
+        width: 280px;
+        height: 280px;         
+    }
+
+    form{
+        width: 280px;
+    }
+
+    .blogProduct .video{
+        width: 280px;
+        height: 280px;
+    }
+}
