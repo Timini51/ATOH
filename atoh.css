@@ -343,17 +343,15 @@ footer ul{
     padding: 50px 8%;
 }
 
+/*.hide{
+    display: none;
+}*/
+
 .view{
     padding-bottom: 50px;
     justify-content: center;
     align-items: center;
     display: flex;
-    opacity: 0.4;
-    pointer-events: none;
-}
-
-.hide{
-    display: none;
 }
 
 /*Contact*/

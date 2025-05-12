@@ -11,6 +11,32 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
 }
 
+//Shop page edit
+const hide = document.querySelector('.hide');
+const view = document.querySelector('#view');
+const moreProduct = document.querySelector('.moreProduct')
+let visible = false;
+
+//remove view
+//moreProduct.removeChild(hide);
+
+//add view back
+const show = function() {
+    if(visible){
+     //remove view
+     moreProduct.removeChild(hide);
+     view.textContent = 'View all';
+     visible = false;
+    }
+
+    else{
+    moreProduct.appendChild(hide);
+    view.textContent = 'Show less';
+    visible = true;
+    }
+}
+view.addEventListener('click', show)
+
 //Scroll reveal
 
 const sr = ScrollReveal({
@@ -20,6 +46,7 @@ const sr = ScrollReveal({
     reset: true,
     cleanup: true
 })
+
 
 //home page
 sr.reveal('.home h1',{delay: 200, origin: 'left'});
